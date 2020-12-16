@@ -1,22 +1,34 @@
-.tweetBlocks{
+#tweetBlocks {
   margin-top: 1em;
-  border-style: solid;
-  border-width: 5px;
-  display:flex;
+  display: flex;
+  flex-direction: column;
 }
-.tweetBlocks:hover{
+#tweetBlocks article:hover {
   box-shadow: 10px 10px rgb(170, 192, 231);
+  color: #000;
 }
 
-.tweetBlocks header{
-  margin-top:0;
+.handle {
+  color: transparent;
+}
+#tweetBlocks article:hover .handle {
+  color: rgb(170, 192, 231);
+}
+
+#tweetBlocks article {
+  border-style: solid;
+  margin-bottom: 1em;
+}
+
+#tweetBlocks header {
+  margin-top: 0;
   background-color: transparent;
   height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.tweetBlocks div{
+#tweetBlocks div {
   margin-left: 0.5em;
   margin-right: 0.5em;
   border-bottom-style: solid;
@@ -26,16 +38,17 @@
   flex-wrap: wrap;
 }
 
-.tweetBlocks footer{
+#tweetBlocks footer {
   margin-left: 1em;
   margin-right: 1em;
   font-size: 80%;
 }
 
-.tweetBlocks p{
-  margin:0.5em;
+#tweetBlocks p {
+  margin: 0.5em;
 }
 
-.tweetBlocks div p {
-  margin: 0.5em;
+#tweetBlocks header p {
+  display: flex;
+  align-items: center;
 }
