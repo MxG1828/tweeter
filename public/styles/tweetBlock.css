@@ -1,0 +1,40 @@
+.tweetBlocks{
+  margin-top: 1em;
+  border-style: solid;
+  border-width: 5px;
+  display:flex;
+}
+.tweetBlocks:hover{
+  box-shadow: 10px 10px rgb(123, 148, 156);
+}
+
+.tweetBlocks header{
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tweetBlocks div{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border-bottom-style: solid;
+  border-width: 5px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.tweetBlocks footer{
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 80%;
+}
+
+.tweetBlocks p{
+  margin:0.5em;
+}
+
+.tweetBlocks div p {
+  margin: 0.5em;
+}
