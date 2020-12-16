@@ -5,10 +5,11 @@
   display:flex;
 }
 .tweetBlocks:hover{
-  box-shadow: 10px 10px rgb(123, 148, 156);
+  box-shadow: 10px 10px rgb(170, 192, 231);
 }
 
 .tweetBlocks header{
+  margin-top:0;
   background-color: transparent;
   height: 60px;
   display: flex;
