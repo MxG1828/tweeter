@@ -67,9 +67,26 @@ $(document).ready(function () {
     `);
     return $tweet;
   };
-  $("#tweetForm").on("click",(evt)=>{
-    $(".new-tweet").slideToggle({complete: ()=>{
-      $("#tweet-text").focus();
-    }})
+  $("#tweetForm").on("click", (evt) => {
+    $(".new-tweet").slideToggle({
+      complete: () => {
+        $("#tweet-text").focus();
+      },
+    });
+  });
+  $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if (scroll > 280) {
+      $("#tweetForm").css("display", "none");
+      $("#arrowUp").css("display", "inline");
+    } else {
+      $("#tweetForm").css("display", "inline");
+      $("#arrowUp").css("display", "none");
+    }
+  });
+  $("#arrowUp").click(()=>{
+    $(window).scrollTop(0);
+    $(".new-tweet").slideDown();
+    $("#tweet-text").focus();
   });
 });
