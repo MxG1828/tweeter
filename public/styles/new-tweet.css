@@ -17,6 +17,7 @@ div.error span{
 }
 
 .new-tweet{
+  margin-top: 1em;
   display: none;
   flex-direction: column;
   justify-content: center;
