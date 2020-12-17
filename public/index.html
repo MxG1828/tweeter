@@ -28,6 +28,10 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <button id="tweetForm">
+        <p><b>Write</b> a new tweet</p>
+        <div class="arrow">&#10163;</div>
+      </button>
     </nav>
     <header>
       <div>
@@ -42,6 +46,8 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <div class="error" id="emptyErr"><span>&#9888;</span>Sorry, cannot send empty tweets.^_^<span>&#9888;</span></div>
+        <div class="error" id="exceedErr"><span>&#9888;</span>Sorry, tweets cannot exceed 140 chars.TAT<span>&#9888;</span></div>
         <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>

@@ -3,23 +3,9 @@
   display: flex;
   flex-direction: column;
 }
-#tweetBlocks article:hover {
-  box-shadow: 10px 10px rgb(170, 192, 231);
-  color: #000;
+#tweetBlocks p {
+  margin: 0.5em;
 }
-
-.handle {
-  color: transparent;
-}
-#tweetBlocks article:hover .handle {
-  color: rgb(170, 192, 231);
-}
-
-#tweetBlocks article {
-  border-style: solid;
-  margin-bottom: 1em;
-}
-
 #tweetBlocks header {
   margin-top: 0;
   background-color: transparent;
@@ -27,6 +13,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+#tweetBlocks header p {
+  display: flex;
+  align-items: center;
+}
+.handle {
+  color: transparent;
+}
+#tweetBlocks article:hover .handle {
+  color: rgb(170, 192, 231);
 }
 #tweetBlocks div {
   margin-left: 0.5em;
@@ -37,18 +33,22 @@
   align-items: flex-end;
   flex-wrap: wrap;
 }
-
+#tweetBlocks article {
+  border-style: solid;
+  margin-bottom: 1em;
+}
+#tweetBlocks article:hover {
+  box-shadow: 10px 10px rgb(170, 192, 231);
+  color: #000;
+}
 #tweetBlocks footer {
   margin-left: 1em;
   margin-right: 1em;
   font-size: 80%;
 }
 
-#tweetBlocks p {
-  margin: 0.5em;
-}
 
-#tweetBlocks header p {
-  display: flex;
-  align-items: center;
-}
+
+
+
+
