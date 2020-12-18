@@ -62,6 +62,11 @@ $(document).ready(function () {
       </div>
       <footer>
         <p>${timeago.format(tweet.created_at)}</p>
+        <p>
+          <span class="flaticon-flag-black-shape"></span>
+          <span class="flaticon-exchange"></span>
+          <span class="flaticon-like"></span>
+        </p>
       </footer>
     </article>
     `);
@@ -76,7 +81,7 @@ $(document).ready(function () {
   });
   $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    if (scroll > 280) {
+    if (scroll > 120) {
       $("#tweetForm").css("display", "none");
       $("#arrowUp").css("display", "inline");
     } else {
@@ -84,7 +89,7 @@ $(document).ready(function () {
       $("#arrowUp").css("display", "none");
     }
   });
-  $("#arrowUp").click(()=>{
+  $("#arrowUp").click(() => {
     $(window).scrollTop(0);
     $(".new-tweet").slideDown();
     $("#tweet-text").focus();

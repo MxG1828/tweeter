@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  nav {
+    background-color: #4056a1;
+  }
+  header#profile {
+    margin-top: 200px;
+    width: 30vw;
+    flex-grow: 1;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-self: start;
+  }
+  main {
+    max-width: 50%;
+    margin-top: 200px;
+    flex-grow: 1;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}

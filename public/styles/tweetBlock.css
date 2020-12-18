@@ -45,6 +45,11 @@
   margin-left: 1em;
   margin-right: 1em;
   font-size: 80%;
+  display:flex;
+  justify-content: space-between;
+}
+footer p span{
+  color:#4056A1
 }
 
 

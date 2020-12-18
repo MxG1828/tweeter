@@ -32,10 +32,10 @@ nav button div.arrow {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
-nav button:focus{
+nav button:focus {
   outline: 0;
 }
-nav button:hover{
+nav button:hover {
   cursor: pointer;
 }
 
