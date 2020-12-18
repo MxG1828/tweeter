@@ -40,6 +40,10 @@ nav button:hover {
 }
 
 @keyframes arrow {
-  0% {top: 0px;}
-  100% {top: 10px;}
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 10px;
+  }
 }

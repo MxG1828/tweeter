@@ -8,14 +8,14 @@ $(document).ready(function () {
   $("form").on("submit", (event) => {
     event.preventDefault();
     $(".error").slideUp();
-    //check if input is empty or over 140
+    //check if input is empty or over 140, slideDown the matching error msg
     if ($("form").children("textarea").val().length === 0) {
       return $("#emptyErr").slideDown();
     }
     if ($("form").children("textarea").val().length > 140) {
       return $("#exceedErr").slideDown();
     }
-    //ajax post input to server .then get the input back and put it on top.
+    //ajax post input to server. then get the most recent post and add it to the top of list.
     $.ajax({
       url: "/tweets/",
       data: $("form").serialize(),
@@ -42,6 +42,7 @@ $(document).ready(function () {
       $("#tweetBlocks").append($tweet);
     }
   };
+  //fuction for cross site scripting
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -72,6 +73,8 @@ $(document).ready(function () {
     `);
     return $tweet;
   };
+  //this tweetForm is a button, top right corner
+  //when clicked, toggle new-tweet form and focus into textarea
   $("#tweetForm").on("click", (evt) => {
     $(".new-tweet").slideToggle({
       complete: () => {
@@ -79,6 +82,8 @@ $(document).ready(function () {
       },
     });
   });
+  //listen for scroll
+  //if page is scrolled down more than 120px, second button appear
   $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     if (scroll > 120) {
@@ -89,6 +94,7 @@ $(document).ready(function () {
       $("#arrowUp").css("display", "none");
     }
   });
+  //when clicked, scroll to top, show new-tweet form, and focus text box
   $("#arrowUp").click(() => {
     $(window).scrollTop(0);
     $(".new-tweet").slideDown();
