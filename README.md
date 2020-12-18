@@ -6,8 +6,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["standart view"](https://github.com/MxG1828/tweeter/blob/master/docs/standardView.png)
+!["wide view"](https://github.com/MxG1828/tweeter/blob/master/docs/wideView.png)
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
